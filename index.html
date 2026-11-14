@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Boutique Le Kiosque · T-shirts et sweats péi</title>
+<meta name="description" content="T-shirts, sweats et mugs péi : cadeaux, souvenirs de La Réunion et animaux qui ont du caractère. Imprimés à la commande, livrés chez vous.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--creme:#f4ecdf;--marine:#16213a;--orange:#e8692c;--sarcelle:#2f8f8a;--texte:#1d2333}
+*{box-sizing:border-box}
+body{margin:0;background:var(--creme);color:var(--texte);font-family:Montserrat,system-ui,sans-serif}
+a{color:inherit}
+header{background:var(--marine);color:var(--creme);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;position:sticky;top:0;z-index:5}
+.marque{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Bebas Neue";font-size:26px;letter-spacing:1px}
+.marque img{width:38px;height:38px;border-radius:50%}
+.btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:800;padding:12px 22px;border-radius:999px}
+.btn.clair{background:transparent;border:2px solid currentColor;color:inherit}
+.haut{background:linear-gradient(180deg,var(--marine) 0%,#22305a 100%);color:var(--creme);text-align:center;padding:70px 20px 90px;position:relative;overflow:hidden}
+.haut:after{content:"";position:absolute;left:50%;bottom:-160px;width:520px;height:520px;transform:translateX(-50%);border-radius:50%;
+ background:repeating-linear-gradient(180deg,#f2b84b 0 34px,var(--orange) 34px 52px,transparent 52px 64px);opacity:.35}
+.haut h1{font-family:"Bebas Neue";font-size:clamp(48px,9vw,96px);line-height:.95;margin:0 0 14px;position:relative;z-index:1}
+.haut h1 span{color:#f2b84b}
+.haut p{max-width:620px;margin:0 auto 26px;font-size:18px;line-height:1.5;position:relative;z-index:1}
+.haut .btn{position:relative;z-index:1}
+.bandeau{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;padding:18px 20px;background:var(--sarcelle);color:#fff;font-weight:700}
+section{max-width:1120px;margin:0 auto;padding:60px 20px}
+h2{font-family:"Bebas Neue";font-size:clamp(36px,6vw,54px);margin:0 0 8px;color:var(--marine)}
+.sous{margin:0 0 30px;font-size:17px}
+.filtres{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.filtres button{border:2px solid var(--marine);background:transparent;border-radius:999px;padding:8px 16px;font:700 14px Montserrat;cursor:pointer;color:var(--marine)}
+.filtres button.actif{background:var(--marine);color:var(--creme)}
+.grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
+.produit{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(22,33,58,.08);display:flex;flex-direction:column}
+.produit img{width:100%;aspect-ratio:12/13;object-fit:cover;background:#ece6da}
+.produit .info{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.produit .tag{font-size:12px;font-weight:800;color:var(--sarcelle);text-transform:uppercase;letter-spacing:.5px}
+.produit b{font-size:17px}
+.produit .prix{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:10px}
+.produit .prix span{font-weight:800}
+.produit .prix a{font-size:14px;padding:9px 16px}
+.etapes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.etape{background:#fff;border-radius:18px;padding:22px}
+.etape .n{font-family:"Bebas Neue";font-size:44px;color:var(--orange);line-height:1}
+footer{background:var(--marine);color:var(--creme);text-align:center;padding:30px 20px;font-size:14px;line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+ <a class="marque" href="#"><img src="logo.png" alt="Logo Le Kiosque">La Boutique Le Kiosque</a>
+ <a class="btn" href="#modeles">Voir les modèles</a>
+</header>
+
+<div class="haut">
+ <h1>Des t-shirts<br><span>100 % péi</span></h1>
+ <p>Des cadeaux qui font rire, des souvenirs de La Réunion et nos animaux qui ont du caractère. Imprimés à la commande, livrés chez vous.</p>
+ <a class="btn" href="#modeles">Je choisis mon modèle</a>
+</div>
+<div class="bandeau"><span>T-shirts, sweats et mugs</span><span>Imprimé à la commande</span><span>Livré à La Réunion et en France</span></div>
+
+<section id="modeles">
+ <h2>Les modèles</h2>
+ <p class="sous">Chaque motif existe en t-shirt, en sweat à capuche et en mug.</p>
+ <div class="filtres">
+  <button class="actif" data-f="tout">Tout</button><button data-f="cadeau">Cadeaux</button><button data-f="souvenir">Souvenirs 974</button><button data-f="animal">Animaux péi</button>
+ </div>
+ <div class="grille">
+  <div class="produit" data-c="cadeau"><img src="m1_maquette.jpg" alt="T-shirt Manman péi" loading="lazy"><div class="info"><span class="tag">Cadeau fête des mères</span><b>Manman péi, la reine de la kaz</b><div class="prix"><span>Dès 22,99 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr">Je le veux</a></div></div></div>
+  <div class="produit" data-c="cadeau"><img src="m2_maquette.jpg" alt="T-shirt En retraite" loading="lazy"><div class="info"><span class="tag">Cadeau retraite</span><b>En retraite, adieu le réveil</b><div class="prix"><span>Dès 22,99 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr">Je le veux</a></div></div></div>
+  <div class="produit" data-c="souvenir"><img src="m5_maquette.jpg" alt="T-shirt Piton de la Fournaise" loading="lazy"><div class="info"><span class="tag">Souvenir 974</span><b>Piton de la Fournaise</b><div class="prix"><span>Dès 22,99 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr">Je le veux</a></div></div></div>
+  <div class="produit" data-c="souvenir"><img src="m6_maquette.jpg" alt="T-shirt Cirque de Mafate" loading="lazy"><div class="info"><span class="tag">Souvenir 974</span><b>Cirque de Mafate, rando club</b><div class="prix"><span>Dès 22,99 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr">Je le veux</a></div></div></div>
+  <div class="produit" data-c="animal"><img src="m7_maquette.jpg" alt="T-shirt Mi lé fatigé" loading="lazy"><div class="info"><span class="tag">Animal péi</span><b>Mi lé fatigé depuis la naissance</b><div class="prix"><span>Dès 22,99 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr">Je le veux</a></div></div></div>
+  <div class="produit" data-c="animal"><img src="m8_maquette.jpg" alt="T-shirt Papangue" loading="lazy"><div class="info"><span class="tag">Animal péi</span><b>Papangue, le roi du ciel</b><div class="prix"><span>Dès 22,99 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr">Je le veux</a></div></div></div>
+ </div>
+</section>
+
+<section>
+ <h2>Comment ça marche</h2>
+ <div class="etapes">
+  <div class="etape"><div class="n">1</div><b>Vous choisissez</b><p>Le motif, puis le t-shirt, le sweat ou le mug, la taille et la couleur.</p></div>
+  <div class="etape"><div class="n">2</div><b>On imprime</b><p>Chaque pièce est imprimée rien que pour vous, à la commande.</p></div>
+  <div class="etape"><div class="n">3</div><b>Vous recevez</b><p>Livraison chez vous, à La Réunion comme en France.</p></div>
+ </div>
+</section>
+
+<footer>La Boutique Le Kiosque (@lekiosquefr) · Le paiement et la livraison se font sur notre boutique partenaire.<br>Une question ? lekiosquestudio01@gmail.com</footer>
+
+<script>
+document.querySelectorAll(".filtres button").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll(".filtres button").forEach(x=>x.classList.toggle("actif",x===b));
+ document.querySelectorAll(".produit").forEach(p=>p.style.display=(b.dataset.f==="tout"||p.dataset.c===b.dataset.f)?"":"none");
+});
+</script>
+</body>
+</html>
